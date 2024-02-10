@@ -43,6 +43,8 @@ starship preset plain-text-symbols -o ~/.config/starship.toml
 cat > ~/.config/fish/config.fish << EOF
 set fish_greeting
 
+export PATH="/opt/homebrew/bin:$PATH"
+
 if status is-interactive
     # https://github.com/atuinsh/atuin
     atuin init fish --disable-up-arrow | source
